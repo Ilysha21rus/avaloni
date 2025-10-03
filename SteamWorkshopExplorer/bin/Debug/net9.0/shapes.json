@@ -1,24 +1,32 @@
 [
   {
     "Type": "Ellipse",
-    "X": 10,
-    "Y": 66,
+    "X": 75,
+    "Y": 103,
     "Width": 100,
     "Height": 60,
     "ControlPoints": null
   },
   {
     "Type": "Ellipse",
-    "X": 194,
-    "Y": 80,
+    "X": 246,
+    "Y": 83,
     "Width": 100,
     "Height": 60,
     "ControlPoints": null
   },
   {
     "Type": "Ellipse",
-    "X": 158,
-    "Y": 193,
+    "X": 402,
+    "Y": 178,
+    "Width": 100,
+    "Height": 60,
+    "ControlPoints": null
+  },
+  {
+    "Type": "Ellipse",
+    "X": 371,
+    "Y": 237,
     "Width": 100,
     "Height": 60,
     "ControlPoints": null

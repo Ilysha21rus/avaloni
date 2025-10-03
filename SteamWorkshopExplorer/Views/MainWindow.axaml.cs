@@ -102,8 +102,8 @@ namespace SteamWorkshopExplorer.Views
                 {
                     Width = 100,
                     Height = 60,
-                    Fill = Brushes.DeepPink,
-                    Stroke = Brushes.OrangeRed,
+                    Fill = Brushes.Yellow,
+                    Stroke = Brushes.Black,
                     StrokeThickness = 2
                 };
                 Canvas.SetLeft(ellipseNew, point.X - 50);
@@ -124,7 +124,7 @@ namespace SteamWorkshopExplorer.Views
                 {
                     _currentBezierLine = new Polyline
                     {
-                        Stroke = Brushes.Red,
+                        Stroke = Brushes.Green,
                         StrokeThickness = 2
                     };
                     canvas.Children.Add(_currentBezierLine);
@@ -190,8 +190,8 @@ namespace SteamWorkshopExplorer.Views
                     {
                         Width = shape.Width,
                         Height = shape.Height,
-                        Fill = Brushes.DeepPink,
-                        Stroke = Brushes.OrangeRed,
+                        Fill = Brushes.Yellow,
+                        Stroke = Brushes.Black,
                         StrokeThickness = 2
                     };
                     Canvas.SetLeft(ellipse, shape.X);
