@@ -73,3 +73,4 @@ C:\Users\ilya-\OneDrive\Рабочий стол\SteamWorkshopExplorer\SteamWorks
 C:\Users\ilya-\OneDrive\Рабочий стол\SteamWorkshopExplorer\SteamWorkshopExplorer\obj\Debug\net9.0\SteamWorkshopExplorer.pdb
 C:\Users\ilya-\OneDrive\Рабочий стол\SteamWorkshopExplorer\SteamWorkshopExplorer\obj\Debug\net9.0\SteamWorkshopExplorer.genruntimeconfig.cache
 C:\Users\ilya-\OneDrive\Рабочий стол\SteamWorkshopExplorer\SteamWorkshopExplorer\obj\Debug\net9.0\ref\SteamWorkshopExplorer.dll
+C:\Users\ilya-\OneDrive\Рабочий стол\SteamWorkshopExplorer\SteamWorkshopExplorer\obj\Debug\net9.0\SteamWorkshopExplorer.sourcelink.json

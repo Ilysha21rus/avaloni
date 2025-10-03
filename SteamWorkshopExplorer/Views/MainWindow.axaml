@@ -1,32 +1,28 @@
 <Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:vm="clr-namespace:SteamWorkshopExplorer.ViewModels"
-        mc:Ignorable="d"
         x:Class="SteamWorkshopExplorer.Views.MainWindow"
-        Title="123"
-        Width="800" Height="600">
+        Title="Shapes Editor"
+        Width="900" Height="600">
 
-    <Design.DataContext>
+    <Window.DataContext>
         <vm:MainViewModel/>
-    </Design.DataContext>
+    </Window.DataContext>
 
-    <DockPanel LastChildFill="True">
-
-        
-        <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" Margin="5" Spacing="5">
-            <Button Content="Delete" Width="110" Height="30" Click="OnClear"/>
-            <Button Content="Add Ellipse" Width="110" Height="30" Click="OnEllipseModeClicked"/>
-            <Button Content="Add C Bezier" Width="110" Height="30" Click="OnBezierModeClicked"/>
-            <Button Content="json test" Width="110" Height="30" Click="OnSave"/>
+    <DockPanel>
+        <!-- Панель кнопок -->
+        <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Margin="10" Spacing="10">
+            <Button Content="Delete" Click="OnClearClicked"/> 
+            <Button Content="Add Ellipse" Click="OnEllipseMode"/>
+            <Button Content="Add C Bezier" Click="OnBezierMode"/>
+            <Button Content="Save" Click="OnSaveClicked"/>
+            <Button Content="json" Click="OnLoadClicked"/>
         </StackPanel>
-        
-        <Canvas Name="DrawingCanvas"
-                Background="LightGray"
-                PointerPressed="Canvas_PointerPressed"
-                PointerMoved="Canvas_PointerMoved"
-                PointerReleased="Canvas_PointerReleased"/>
-    
+
+        <!-- Канвас -->
+        <Canvas x:Name="DrawingCanvas" Background="White"
+                PointerPressed="DrawingCanvas_PointerPressed"
+                PointerMoved="DrawingCanvas_PointerMoved"
+                PointerReleased="DrawingCanvas_PointerReleased"/>
     </DockPanel>
 </Window>

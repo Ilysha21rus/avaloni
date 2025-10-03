@@ -1,28 +1,26 @@
 ﻿using Avalonia;
 using SteamWorkshopExplorer.Models;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.IO;
-using Newtonsoft.Json;
-using System.Collections.Generic;
+using System.Text.Json;
 
 namespace SteamWorkshopExplorer.ViewModels
 {
     public class MainViewModel
     {
         public ObservableCollection<ShapeModel> Shapes { get; set; } = new();
-        public bool IsEllipseMode { get; set; } = true;
+        public bool IsBezierMode { get; set; } = false;
 
         private const string SaveFile = "shapes.json";
 
-        public void AddEllipse(double x, double y, double width, double height)
+        public void AddEllipse(double x, double y)
         {
             Shapes.Add(new ShapeModel
             {
                 Type = "Ellipse",
                 X = x,
-                Y = y,
-                Width = width,
-                Height = height
+                Y = y
             });
         }
 
@@ -42,20 +40,21 @@ namespace SteamWorkshopExplorer.ViewModels
 
         public void SaveToJson()
         {
-            var json = JsonConvert.SerializeObject(Shapes, Formatting.Indented);
+            var json = JsonSerializer.Serialize(Shapes, new JsonSerializerOptions { WriteIndented = true });
             File.WriteAllText(SaveFile, json);
         }
 
         public void LoadFromJson()
         {
             if (!File.Exists(SaveFile)) return;
+
             var json = File.ReadAllText(SaveFile);
-            var shapes = JsonConvert.DeserializeObject<List<ShapeModel>>(json);
+            var shapes = JsonSerializer.Deserialize<ObservableCollection<ShapeModel>>(json);
+
             if (shapes != null)
             {
                 Shapes.Clear();
-                foreach (var s in shapes)
-                    Shapes.Add(s);
+                foreach (var s in shapes) Shapes.Add(s);
             }
         }
     }
