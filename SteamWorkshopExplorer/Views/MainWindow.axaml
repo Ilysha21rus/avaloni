@@ -3,7 +3,7 @@
         xmlns:vm="clr-namespace:SteamWorkshopExplorer.ViewModels"
         x:Class="SteamWorkshopExplorer.Views.MainWindow"
         Title="Shapes Editor"
-        Width="900" Height="600">
+        Width="1800" Height="1200">
 
     <Window.DataContext>
         <vm:MainViewModel/>
