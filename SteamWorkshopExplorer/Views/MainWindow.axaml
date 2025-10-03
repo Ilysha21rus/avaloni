@@ -10,7 +10,6 @@
     </Window.DataContext>
 
     <DockPanel>
-        <!-- Панель кнопок -->
         <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Margin="10" Spacing="10">
             <Button Content="Delete" Click="OnClearClicked"/> 
             <Button Content="Add Ellipse" Click="OnEllipseMode"/>
@@ -18,8 +17,7 @@
             <Button Content="Save" Click="OnSaveClicked"/>
             <Button Content="json" Click="OnLoadClicked"/>
         </StackPanel>
-
-        <!-- Канвас -->
+        
         <Canvas x:Name="DrawingCanvas" Background="White"
                 PointerPressed="DrawingCanvas_PointerPressed"
                 PointerMoved="DrawingCanvas_PointerMoved"
