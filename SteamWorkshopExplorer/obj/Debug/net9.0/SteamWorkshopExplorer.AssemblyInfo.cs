@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SteamWorkshopExplorer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+83455e37f9beb19d3efd41c4f8afd8567e12215a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+db541939674ee6496948fc1a01ba9a98d165119c")]
 [assembly: System.Reflection.AssemblyProductAttribute("SteamWorkshopExplorer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SteamWorkshopExplorer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
